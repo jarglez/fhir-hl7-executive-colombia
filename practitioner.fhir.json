@@ -1,0 +1,57 @@
+{
+    "resourceType": "Practitioner",
+    "id": "69cec192-4cb8-426e-a0ca-a9efcd1d2251",
+    "identifier": [
+        {
+            "system": "urn:hospitalPatito/numEmpleado",
+            "value": "10254A"
+        }
+    ],
+    "name": [
+        {
+            "family": "Solano Araya",
+            "given": ["Raul"],
+            "prefix": ["Dr."],
+            "use": "usual",
+            "text": "Dr. Raul Solano Araya"
+        }
+    ],
+    "telecom": [
+        {
+            "use": "work",
+            "system": "email",
+            "value": "rsolano@hospitalpatito.com"
+        }
+    ],
+    "gender": "male",
+    "active": true,
+    "birthDate": "1985-06-24",
+    "qualification": [
+        {
+            "identifier": [
+                {
+                    "system": "urn:ministerio/educacion",
+                    "value": "125478",
+                    "type": {
+                        "coding": [
+                            {
+                                "code": "MD",
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "display": "Medical License number"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0360|2.7",
+                        "code": "MD",
+                        "display": "Doctor of Medicine"
+                    }
+                ]
+            }
+        }
+    ]
+}

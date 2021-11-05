@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="caf84d25-c541-4f81-983a-5c6b7f53756f"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://example.com/health/e-prescriptions"/>
+        <value value="medx202111049876"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="C07AA01"/>
+            <display value="alprenolol"/>
+        </coding>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/c473d8e4-a110-445b-88b5-2231c4de434f"/>
+        <display value="Carlos Alfredo Moreno Escobar"/>
+    </subject>
+    <authoredOn value="2021-11-04T14:58:12-05:00"/>
+    <requester>
+        <reference value="Practitioner/6cf4e54c-cb0f-4bed-b5ae-f63a8f32d762"/>
+        <display value="Gregorio Casas Hernandez"/>
+    </requester>
+    <dosageInstruction>
+        <sequence value="1"/>
+        <text value="Tomar 1 cápsula de 50 mg cada 12 horas, no exceder 2 capsulas o 100 mgal día"/>
+        <timing>
+            <repeat>
+                <frequency value="2"/>
+                <period value="1"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </timing>
+        <doseAndRate>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+                    <code value="ordered"/>
+                    <display value="Ordered"/>
+                </coding>
+            </type>
+            <doseQuantity>
+                <value value="1"/>
+                <unit value="pill"/>
+            </doseQuantity>
+        </doseAndRate>
+    </dosageInstruction>
+    <dispenseRequest>
+        <validityPeriod>
+            <start value="2021-11-04"/>
+            <end value="2021-12-04"/>
+        </validityPeriod>
+        <numberOfRepeatsAllowed value="1"/>
+        <quantity>
+            <value value="60"/>
+            <unit value="pill"/>
+        </quantity>
+        <expectedSupplyDuration>
+            <value value="30"/>
+            <unit value="days"/>
+        </expectedSupplyDuration>
+    </dispenseRequest>
+</MedicationRequest>

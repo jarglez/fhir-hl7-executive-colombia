@@ -1,0 +1,56 @@
+{
+    "resourceType": "Patient",
+    "id": "40f128d1-a000-423d-989d-3ab4462ed455",
+    "identifier": [
+        {
+            "system": "urn:cedula",
+            "type": {
+                "coding": [
+                    {
+                        "system": "urn:costarica/id",
+                        "code": "ID",
+                        "display": "Identificador nacional"
+                    }
+                ]
+            },
+            "value": "1258455582",
+            "use": "official"
+        }
+    ],
+    "name": [
+        {
+            "family": "Ramirez Garza",
+            "given": ["Maria", "Guadalupe"],
+            "use": "official",
+            "text": "Maria Guadalupe Ramirez Garza"
+        }
+    ],
+    "gender": "female",
+    "active": true,
+    "deceasedBoolean": false,
+    "birthDate": "1978-01-05",
+    "address": [
+        {
+            "city": "San José",
+            "district": "Zapote",
+            "country": "Costa Rica",
+            "line": ["Calle No. 34"],
+            "use": "home",
+            "postalCode": "12345",
+            "state": "San José"
+        }
+    ],
+    "maritalStatus": {
+        "coding": [
+            {
+                "code": "M",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "display": "Married"
+            }
+        ]
+    },
+    "managingOrganization": {
+        "reference": "Organization/b5f5ad3c-7937-4011-8d50-7e105f107a68",
+        "display": "Hospital Patito Inc."
+    }
+}

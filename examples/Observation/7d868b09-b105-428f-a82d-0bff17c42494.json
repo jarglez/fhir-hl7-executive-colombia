@@ -1,0 +1,40 @@
+{
+	"resourceType": "Observation",
+	"id": "7d868b09-b105-428f-a82d-0bff17c42494",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "exam",
+					"display": "exam"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "272102008",
+				"display": "Peso"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/c473d8e4-a110-445b-88b5-2231c4de434f",
+		"display": "Carlos Alfredo Moreno Escobar"
+	},
+	"effectiveDateTime": "2019-04-17T07:21:00.000Z",
+	"performer": [
+		{
+			"reference": "Practitioner/6cf4e54c-cb0f-4bed-b5ae-f63a8f32d762",
+			"display": "Gregorio Casas Hernandez"
+		}
+	],
+	"valueQuantity": {
+		"value": 95,
+		"unit": "kg"
+	}
+}

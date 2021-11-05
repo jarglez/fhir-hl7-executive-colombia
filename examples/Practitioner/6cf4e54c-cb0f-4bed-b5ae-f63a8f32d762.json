@@ -1,0 +1,92 @@
+{
+	"resourceType": "Practitioner",
+	"id": "6cf4e54c-cb0f-4bed-b5ae-f63a8f32d762",
+	"identifier": [
+		{
+			"use": "official",
+			"type": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+						"code": "NNCOL",
+						"display": "National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code"
+					}
+				]
+			},
+			"system": "urn:oid:2.16.170.3.899999040.1.4",
+			"value": "6758493012"
+		}
+	],
+	"active": true,
+	"name": [
+		{
+			"use": "official",
+			"_family": {
+				"extension": [
+					{
+						"id": "humanname-fathers-family",
+						"url": "http://hl7.org/fhir/StructureDefinition/humanname-fathers-family",
+						"valueString": "Casas"
+					},
+					{
+						"id": "humanname-mothers-family",
+						"url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+						"valueString": "Hernandez"
+					}
+				]
+			},
+			"given": [
+				"Gregorio"
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "+57(600)761-9876",
+			"use": "home"
+		},
+		{
+			"system": "phone",
+			"value": "+57(300)123-4567",
+			"use": "mobile"
+		},
+		{
+			"system": "email",
+			"value": "gregorio.casas@example.com"
+		}
+	],
+	"gender": "male",
+	"birthDate": "1991-06-05",
+	"qualification": [
+		{
+			"identifier": [
+				{
+					"use": "official",
+					"type": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+								"code": "MD",
+								"display": "Medical License number"
+							}
+						]
+					},
+					"value": "TP-6758493012"
+				}
+			],
+			"code": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "59058001",
+						"display": "médico general"
+					}
+				]
+			},
+			"period": {
+				"start": "2006-09-01"
+			}
+		}
+	]
+}

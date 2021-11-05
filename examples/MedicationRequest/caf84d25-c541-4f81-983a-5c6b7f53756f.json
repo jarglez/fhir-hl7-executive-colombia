@@ -1,0 +1,76 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "caf84d25-c541-4f81-983a-5c6b7f53756f",
+	"identifier": [
+		{
+			"use": "official",
+			"system": "http://example.com/health/e-prescriptions",
+			"value": "medx202111049876"
+		}
+	],
+	"status": "active",
+	"intent": "order",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.whocc.no/atc",
+				"code": "C07AA01",
+				"display": "alprenolol"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/c473d8e4-a110-445b-88b5-2231c4de434f",
+		"display": "Carlos Alfredo Moreno Escobar"
+	},
+	"authoredOn": "2021-11-04T14:58:12-05:00",
+	"requester": {
+		"reference": "Practitioner/6cf4e54c-cb0f-4bed-b5ae-f63a8f32d762",
+		"display": "Gregorio Casas Hernandez"
+	},
+	"dosageInstruction": [
+		{
+			"sequence": 1,
+			"text": "Tomar 1 cápsula de 50 mg cada 12 horas, no exceder 2 capsulas o 100 mgal día",
+			"timing": {
+				"repeat": {
+					"frequency": 2,
+					"period": 1,
+					"periodUnit": "d"
+				}
+			},
+			"doseAndRate": [
+				{
+					"type": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+								"code": "ordered",
+								"display": "Ordered"
+							}
+						]
+					},
+					"doseQuantity": {
+						"value": 1,
+						"unit": "pill"
+					}
+				}
+			]
+		}
+	],
+	"dispenseRequest": {
+		"validityPeriod": {
+			"start": "2021-11-04",
+			"end": "2021-12-04"
+		},
+		"numberOfRepeatsAllowed": 1,
+		"quantity": {
+			"value": 60,
+			"unit": "pill"
+		},
+		"expectedSupplyDuration": {
+			"value": 30,
+			"unit": "days"
+		}
+	}
+}

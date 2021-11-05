@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="b73eb220-4e86-4d69-9c23-f9998294dc90"/>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://hl7.org/fhir/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="386534000"/>
+            <display value="Presión arterial"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/c473d8e4-a110-445b-88b5-2231c4de434f"/>
+        <display value="Carlos Alfredo Moreno Escobar"/>
+    </subject>
+    <effectiveDateTime value="2021-11-04T14:30:02-05:00"/>
+    <performer>
+        <reference value="Practitioner/6cf4e54c-cb0f-4bed-b5ae-f63a8f32d762"/>
+        <display value="Gregorio Casas Hernandez"/>
+    </performer>
+    <component>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="271649006"/>
+                <display value="presión sistólica"/>
+            </coding>
+        </code>
+        <valueQuantity>
+            <value value="119"/>
+            <unit value="mmHg"/>
+        </valueQuantity>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="271650006"/>
+                <display value="presión diastólica"/>
+            </coding>
+        </code>
+        <valueQuantity>
+            <value value="79"/>
+            <unit value="mmHg"/>
+        </valueQuantity>
+    </component>
+</Observation>

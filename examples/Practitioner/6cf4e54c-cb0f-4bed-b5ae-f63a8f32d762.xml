@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir">
+    <id value="6cf4e54c-cb0f-4bed-b5ae-f63a8f32d762"/>
+    <identifier>
+        <use value="official"/>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NNCOL"/>
+                <display value="National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code"/>
+            </coding>
+        </type>
+        <system value="urn:oid:2.16.170.3.899999040.1.4"/>
+        <value value="6758493012"/>  
+    </identifier>
+    <active value="true"/>
+    <name>
+        <use value="official"/>
+        <family>
+            <extension id="humanname-fathers-family" url="http://hl7.org/fhir/StructureDefinition/humanname-fathers-family">
+                <valueString value="Casas"/>
+            </extension>
+            <extension id="humanname-mothers-family" url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+                <valueString value="Hernandez"/>
+            </extension>
+        </family>
+        <given value="Gregorio"/>
+     </name>
+    <telecom>
+        <system value="phone"/>
+        <value value="+57(600)761-9876"/>
+        <use value="home"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="+57(300)123-4567"/>
+        <use value="mobile"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="gregorio.casas@example.com"/>
+    </telecom>
+    <gender value="male"/>
+    <birthDate value="1991-06-05"/>
+    <qualification>
+        <identifier>
+            <use value="official"/>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="MD"/>
+                    <display value="Medical License number"/>
+                </coding>
+            </type>
+            <value value="TP-6758493012"/>
+        </identifier>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="59058001"/>
+                <display value="médico general"/>
+            </coding>
+        </code>
+        <period>
+            <start value="2006-09-01"/>
+        </period>
+    </qualification>
+</Practitioner>
