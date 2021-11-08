@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "52d709e4-7d8e-4921-ae05-77d03a654781",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "display": "Oxygen saturation in Arterial blood by Pulse oximetry",
+        "code": "59408-5"
+      }
+    ]
+  },
+  "status": "final",
+  "effectiveDateTime": "2021-11-08T11:12:00.000-06:00",
+  "performer": [
+    {
+      "reference": "Practitioner/69cec192-4cb8-426e-a0ca-a9efcd1d2251",
+      "display": "Dr. Raul Solano Araya"
+    }
+  ],
+  "valueQuantity": {
+    "value": 96,
+    "unit": "%",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  },
+  "subject": {
+    "reference": "Patient/0f128d1-a000-423d-989d-3ab4462ed455",
+    "display": "Maria Guadalupe Ramirez Garza"
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N",
+          "display": "Normal"
+        }
+      ]
+    }
+  ]
+}

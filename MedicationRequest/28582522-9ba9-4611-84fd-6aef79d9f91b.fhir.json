@@ -1,0 +1,102 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "28582522-9ba9-4611-84fd-6aef79d9f91b",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:hospitalPatito/ordenesMedicamentos",
+            "value": "med00000025"
+        }
+    ],
+    "status": "active",
+    "intent": "order",
+    "priority": "routine",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.whocc.no/atc",
+                "display": "enalapril",
+                "code": "C09AA02"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/0f128d1-a000-423d-989d-3ab4462ed455",
+        "display": "Maria Guadalupe Ramirez Garza"
+    },
+    "authoredOn": "2021-11-08T10:44:00.000-06:00",
+    "requester":  {
+      "reference": "Practitioner/69cec192-4cb8-426e-a0ca-a9efcd1d2251",
+      "display": "Dr. Raul Solano Araya"
+    },
+    "dosageInstruction": [
+        {
+            "sequence": 1,
+            "text": "Tomar enalapril 10 mg por vía oral cada 24 h",
+            "patientInstruction": "Tomar con alimentos",
+            "route": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "26643006",
+                        "display": "Oral Use"
+                    }
+                ]
+            },
+            "method": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "419652001",
+                        "display": "Take"
+                    }
+                ]
+            },
+            "timing": {
+                "repeat": {
+                    "frequency": 1,
+                    "period": 24,
+                    "periodUnit": "d"
+                }
+            },
+            "doseAndRate": [
+                {
+                    "type": {
+                        "coding": [
+                            {
+                                "code": "ordered",
+                                "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                                "display": "Ordered"
+                            }
+                        ]
+                    },
+                    "doseQuantity": {
+                        "value": 1,
+                        "unit": "tablets",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{TBL}"
+                    }
+                }
+            ]
+        }
+    ],
+    "dispenseRequest": {
+        "validityPeriod": {
+            "start": "2021-11-08T10:59:00.000-05:00",
+            "end": "2021-12-08T10:59:00.000-05:00"
+        },
+        "numberOfRepeatsAllowed": 1,
+        "quantity": {
+          "value": 31,
+          "unit": "tablets",
+          "system": "http://unitsofmeasure.org",
+          "code": "{TBL}"
+        },
+        "expectedSupplyDuration": {
+          "value": 31,
+          "unit": "day",
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+        }
+    }
+}
