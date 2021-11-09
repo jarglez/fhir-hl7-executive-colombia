@@ -1,0 +1,62 @@
+{
+	"resourceType": "Organization",
+	"id": "b5f5ad3c-7937-4011-8d50-7e105f107a68",
+	"identifier": [
+		{
+			"use": "official",
+			"system": "urn:ministerio/salud",
+			"value": "urn:uuid:ae588840-525c-4dc6-8d7f-3f8a992db3f0"
+		},
+		{
+			"use": "official",
+			"type": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+						"code": "TAX",
+						"display": "Tax ID number"
+					}
+				]
+			},
+			"system": "urn:misterio/hacienda",
+			"value": "PATITO024"
+		}
+	],
+	"active": true,
+	"type": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/organization-type",
+					"code": "prov",
+					"display": "Healthcare Provider"
+				}
+			]
+		}
+	],
+	"name": "Hospital Patito Inc.",
+	"alias": [
+		"Hospital Patito"
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "1220122523",
+			"use": "work"
+		}
+	],
+	"address": [
+		{
+			"use": "work",
+			"line": [
+				"Calle No 1",
+				"Colonia San José"
+			],
+			"city": "San José",
+			"district": "Zapote",
+			"state": "San José",
+			"postalCode": "12345",
+			"country": "Costa Rica"
+		}
+	]
+}
